@@ -1,3 +1,11 @@
+> [!IMPORTANT]
+> **This repository is archived and unmaintained (since 2026-08). Please use [lie-jiu/wekit-read-receipts-server](https://github.com/lie-jiu/wekit-read-receipts-server) instead.**
+>
+> The successor stops forking by platform: one codebase runs on Bun (reverse proxy / direct public bind / Cloudflare Tunnel) *and* on Cloudflare Workers (Durable Object with embedded SQLite), and it already covers everything this port did plus level-based quota formulas, IP geolocation quotas, zombie-user cleanup, audit logging and a `bun run manage` ops CLI. This repo stays available only as an archive of the EdgeOne port — **issues and PRs here will not be actioned**.
+>
+> - **Still want EdgeOne?** Port from the successor; the platform adapters here and in [wekit-read-receipts-cf-workers](https://github.com/lie-jiu/wekit-read-receipts-cf-workers) (also archived) map onto its unified `src/backends/` SQLite interface.
+> - **License changed**: this repo is Apache-2.0, the new one is AGPL-3.0 — check the difference before redistributing.
+
 # Read Receipts Server (EdgeOne Edition)
 
 [![License: Apache-2.0](https://img.shields.io/github/license/lie-jiu/wekit-read-receipts-edgeone)](LICENSE)
