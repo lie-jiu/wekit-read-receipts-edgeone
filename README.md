@@ -1,3 +1,12 @@
+> [!IMPORTANT]
+> **本仓库已归档、停止维护（2026-08），请使用新版：[lie-jiu/wekit-read-receipts-server](https://github.com/lie-jiu/wekit-read-receipts-server)。**
+>
+> 新版不再按平台分叉仓库：同一代码库同时支持 Bun 自建（反向代理 / 公网直连 / Cloudflare Tunnel）与 Cloudflare Workers（Durable Object 内置 SQLite）两种运行时，功能已覆盖并超出本移植版——等级权益公式、IP 定位配额、僵尸用户清理、审计日志与 `bun run manage` 运维脚本。本仓库仅作为 EdgeOne 移植方案的历史存档保留，**这里的 issue 与 PR 不再处理**。
+>
+> - **仍需跑在 EdgeOne 上**：请基于新版移植，平台适配层可对照本仓库与 [wekit-read-receipts-cf-workers](https://github.com/lie-jiu/wekit-read-receipts-cf-workers)（同样已归档）的 `src/backends/` 实现——新版正是把这一层抽成了统一的 SQLite 后端接口。
+> - **许可已变更**：本仓库为 Apache-2.0，新版为 AGPL-3.0，二次分发前请确认差异。
+> - English notice: same content at the top of [README.en.md](README.en.md).
+
 # Read Receipts Server（EdgeOne 版）
 
 [![License: Apache-2.0](https://img.shields.io/github/license/lie-jiu/wekit-read-receipts-edgeone)](LICENSE)
